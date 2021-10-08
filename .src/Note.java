@@ -1,3 +1,4 @@
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Note {
@@ -47,7 +48,7 @@ public class Note {
         this.pins.add(new int[] {x, y});
     }
     public void unpinNote(int x, int y) {
-        pins.removeIf(pin -> x == this.getxCoord() && y == this.getyCoord());
+        pins.removeIf(pin -> x == pin[0] && y == pin[1]);
     }
 
     //Functional Methods
