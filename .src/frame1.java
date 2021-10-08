@@ -174,8 +174,7 @@ public class frame1 {
 	}
 	*/
 	private void renderBtnCONNECT() {
-		BBbutton CONNECT = new BBbutton("CONNECT");
-		CONNECT.setText(CONNECT.getID());
+		JButton CONNECT = new JButton("CONNECT");
 		GridBagConstraints gbc_btnCONNECT = new GridBagConstraints();
 		gbc_btnCONNECT.fill = GridBagConstraints.HORIZONTAL;
 		gbc_btnCONNECT.insets = new Insets(0, 0, 5, 5);
