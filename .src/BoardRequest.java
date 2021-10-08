@@ -3,7 +3,7 @@ import java.net.* ;
 import java.util.* ;
 
 public class BoardRequest implements Runnable {
-    Socket socket;
+    final Socket socket;
     final static String CRLF = "\r\n";
     final static String DELIM = "!.!";
     final Board board;
