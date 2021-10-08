@@ -242,6 +242,10 @@ public class Board {
         this.noteList.clear();
     }
 
+    public void clearPins() {
+        this.pins.clear();;
+    }
+
     public void shakeNotes() {
         this.noteArrayList.removeIf((Note tempNote) -> !tempNote.isPinned());
     }

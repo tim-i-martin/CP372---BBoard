@@ -80,7 +80,7 @@ public class Note {
      * @return - returns true if the input reference matches card refersTo, return false otherwise
      */
     public Boolean referenceMatches(String inputReference) {
-        return inputReference == this.getMessage();
+        return this.getMessage().contains(inputReference);
     }
 
     public String getCoordsAsString() {
