@@ -240,10 +240,7 @@ public class Board {
 
     public void clearNotes() {
         this.noteList.clear();
-    }
-
-    public void clearPins() {
-        this.pins.clear();;
+        this.pins.clear();
     }
 
     public void shakeNotes() {
