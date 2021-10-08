@@ -16,7 +16,7 @@ import javax.swing.SpinnerNumberModel;
 import javax.swing.JTextArea;
 import java.awt.Color;
 
-public class frame1 {
+public class GUI {
 	private BoardClient client = null;
 	private JFrame frmClientPortal;
 	private JTextField txtIPaddress;
@@ -42,7 +42,7 @@ public class frame1 {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					frame1 window = new frame1();
+					GUI window = new GUI();
 					window.frmClientPortal.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -54,7 +54,7 @@ public class frame1 {
 	/**
 	 * Create the application.
 	 */
-	public frame1() {
+	public GUI() {
 		initialize();
 	}
 
